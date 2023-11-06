@@ -56,10 +56,12 @@ class HomePage extends StatelessWidget {
                             subtitle: Column(
                               children: <Widget>[
                                 Text("ID:${data.id ?? ""}"),
-                                Text("Price: \$${data.price ?? ""}"),
                                 Text("Category: ${data.category ?? ""}"),
+                                Text("Price: \$${data.price ?? ""}"),
                                 Text("Rating: ${data.rating!.rate}"),
                                 Text("Count: ${data.rating!.count} available"),
+                                Text(
+                                    "Description: \$${data.description ?? ""}"),
                               ],
                             )));
                   });
